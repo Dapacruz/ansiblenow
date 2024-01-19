@@ -1,0 +1,7 @@
+.vscode
+.DS_Store
+*.db
+*.log*
+__pycache__
+.env
+NOTIFICATIONS_SUPPRESSED
