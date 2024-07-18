@@ -20,15 +20,15 @@ docker build -t ansiblenow .
 ```
 #### Test
 ```sh
-docker run --env-file .env -v $(pwd):/usr/src/ansiblenow ansiblenow python ansiblenow.py --test
+docker run --rm --env-file .env -v $(pwd):/usr/src/ansiblenow ansiblenow python ansiblenow.py --test
 ```
 #### Test Interactively
 ```sh
-docker run --env-file .env -itv $(pwd):/usr/src/ansiblenow ansiblenow /bin/bash
+docker run --rm --env-file .env -itv $(pwd):/usr/src/ansiblenow ansiblenow /bin/bash
 ```
 #### Run
 ```sh
-docker run --env-file .env -v $(pwd):/usr/src/ansiblenow ansiblenow
+docker run --rm --env-file .env -v $(pwd):/usr/src/ansiblenow ansiblenow
 ```
 
 ### Main Files
